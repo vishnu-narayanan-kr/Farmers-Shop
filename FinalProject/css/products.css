@@ -17,19 +17,7 @@ p {
     flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
-    .filter {
-        width: 100%;
-        position: fixed;
-        top: 2.5rem;
-        left: 0;
-        color: white;
-        background-color: green;
-        padding: 15px;
-        box-sizing: border-box;
-        display: unset;
-    }
-}
+
 
 .filter label {
     margin-right: 10px;
@@ -70,9 +58,8 @@ button.danger {
 
 .product {
     padding: 5px;
-    flex: 1 1 50%;
-    max-width: 50%;
     border-radius: 5px;
+    width: 100%;
     box-sizing: border-box;
     background-color: transparent;
     transition: ease-in background-color 0.25s;
@@ -122,9 +109,9 @@ button.orange {
     bottom: 30px;
     right: 30px;
     background-color: white;
-    height: 100px;
-    width: 100px;
-    outline-offset: -10px;
+    height: 70px;
+    width: 70px;
+    outline-offset: -7px;
     outline-style: dashed;
     border-radius: 50%;
     box-shadow: 0 0 10px 0;
@@ -146,4 +133,29 @@ button.orange {
 
 .cta-button:hover {
     background-color: rgb(2, 92, 2);
+}
+
+@media (min-width: 768px) {
+    .filter {
+        width: 100%;
+        position: fixed;
+        top: 2.5rem;
+        left: 0;
+        color: white;
+        background-color: green;
+        padding: 15px;
+        box-sizing: border-box;
+        display: unset;
+    }
+
+    .product {
+        flex: 1 1 50%;
+        max-width: 50%; 
+    }
+
+    #total {
+        height: 100px;
+        width: 100px;
+        outline-offset: -10px;
+    }
 }
