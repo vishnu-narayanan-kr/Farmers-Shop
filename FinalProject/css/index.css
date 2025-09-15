@@ -26,6 +26,7 @@
     scrollbar-width: thin; /* "auto" or "thin" */
     scrollbar-color: #888 #f1f1f1; /* thumb and track color */
     cursor: url('../Images/cursor/carrot-small.png') 0 0, auto;
+    box-sizing: border-box;
 
 }
 
@@ -58,18 +59,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-}
-
-.banner>nav>h3 {
-    float: left;
-    height: 30px;
-    padding: 0 5px;
-}
-
-.banner>nav>ul {
-    float: right;
-    height: 30px;
-    display: flex;
+    padding: 0.5rem;
 }
 
 .banner>nav a {
@@ -140,13 +130,12 @@ p {
 
 .content li {
     display: inline-block;
-    width: 50vw;
-    max-width: 700px;
-    height: 50vw;
+    width: 80vw;
+    height: fit-content;
     max-height: 700px;
-    margin: 20px;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
     box-shadow: 0 0 10px 0px;
-    border-radius: 50%;
     overflow: hidden;
     transition: ease-out transform 0.25s;
     background-color: beige;
@@ -154,14 +143,6 @@ p {
     outline-offset: -20px;
     outline-style: dashed;
     outline-width: 3px;
-}
-
-.content li:nth-child(odd) {
-    margin-right: auto;
-}
-
-.content li:nth-child(even) {
-    margin-left: auto;
 }
 
 .content li:hover {
@@ -223,4 +204,39 @@ footer>p {
     position: absolute;
     z-index: -1;
     border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .banner>nav>h3 {
+        float: left;
+        height: 30px;
+        padding: 0 5px;
+    }
+
+    .banner>nav>ul {
+        float: right;
+        height: 30px;
+        display: flex;
+    }
+
+    .content li {
+        width: 50vw;
+        max-width: 700px;
+        height: 50vw;
+        max-height: 700px;
+        border-radius: 50%;
+        outline: 1px solid green;
+        outline-offset: -20px;
+        outline-style: dashed;
+        outline-width: 3px;
+        margin: unset;
+    }
+
+    .content li:nth-child(odd) {
+        margin-right: auto;
+    }
+
+    .content li:nth-child(even) {
+        margin-left: auto;
+    }
 }
