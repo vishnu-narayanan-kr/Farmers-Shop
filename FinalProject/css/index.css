@@ -51,47 +51,59 @@
     z-index: -1;
 }
 
-.banner>nav {
+nav {
+    color: white;
     box-shadow: 0 0 20px 0px black;
     background-color: darkgreen;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.banner>nav a {
+nav>h3 {
+    padding: 0 5px;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
     color: white;
     text-decoration: none;
     display: inline-block;
     font-size: smaller;
     text-align: center;
     padding: 6px 6px;
-    height: 30px;
     box-sizing: border-box;
     transition: ease-in background-color 0.25s;
 }
 
-.banner > nav a:first-child {
+nav a:first-child {
     cursor: url("../Images/cursor/home-small.png"), auto;
 }
 
-.banner > nav a:nth-child(2) {
+nav a:nth-child(2) {
     cursor: url("../Images/cursor/vegetable-small.png"), auto;
 }
 
-.banner > nav a:nth-child(3) {
+nav a:nth-child(3) {
     cursor: url("../Images/cursor/vegetable-boxed-small.png"), auto;
 }
 
 
-.banner > nav a:last-child {
+nav a:last-child {
     cursor: url("../Images/cursor/book-small.png"), auto;
 }
 
-.banner>nav a:hover {
+nav a:hover {
     background-color: rgb(43, 179, 43);
 }
 
@@ -207,16 +219,8 @@ footer>p {
 }
 
 @media (min-width: 768px) {
-    .banner>nav>h3 {
-        float: left;
-        height: 30px;
-        padding: 0 5px;
-    }
-
-    .banner>nav>ul {
-        float: right;
-        height: 30px;
-        display: flex;
+    nav, nav>ul {
+        flex-direction: row;
     }
 
     .content li {

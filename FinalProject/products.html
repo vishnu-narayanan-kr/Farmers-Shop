@@ -10,60 +10,60 @@
     <script type="module" src="./js/products.js" defer></script>
 </head>
 <body>
+    <nav>
+        <h3>Québec Farmer's Shop</h3>
+        <ul>
+            <a href="index.html">Home >> </a>
+            <a href="#">Our Products >> </a>
+            <a href="purchase.html">Purchase >> </a>
+            <a href="bibliography.html">Bibliography</a>
+        </ul>
+        <div class="filter">
+            <label>
+                <b>Name(like): </b>
+                <input type="text" id="filter-name">
+            </label>
+            <label>
+                <b>Season: </b>
+                <select name="" id="filter-season">
+                    <option value="any">Any</option>
+                    <option value="summer">Summer</option>
+                    <option value="spring">Spring</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                </select>
+            </label>
+            <label>
+                <b>Type: </b>
+                <select name="" id="filter-type">
+                    <option value="any">Any</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="vegetable">Vegetable</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label>
+                <b>Color: </b>
+                <select name="" id="filter-color">
+                    <option value="any">Any</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                    <option value="green">Green</option>
+                    <option value="brown">Brown</option>
+                    <option value="blue">Blue</option>
+                    <option value="peach">Peach</option>
+                    <option value="purple">Purple</option>
+                </select>
+            </label>
+            <button class="button success" onclick="onSearch()">Show Search</button>
+            <button class="button orange" onclick="onClear()">Show All</button>
+            <button class="button success" onclick="onShowCart()">Show Cart</button>
+            <button class="button danger" onclick="onClearCart()">Clear Cart</button>
+            <button class="button success" onclick="onSaveCart()">Save Cart</button>
+        </div>
+    </nav>
     <div class="banner">
-        <nav>
-            <h3>Québec Farmer's Shop</h3>
-            <ul>
-                <a href="index.html">Home >> </a>
-                <a href="#">Our Products >> </a>
-                <a href="purchase.html">Purchase >> </a>
-                <a href="bibliography.html">Bibliography</a>
-            </ul>
-            <div class="filter">
-                <label>
-                    <b>Name(like): </b>
-                    <input type="text" id="filter-name">
-                </label>
-                <label>
-                    <b>Season: </b>
-                    <select name="" id="filter-season">
-                        <option value="any">Any</option>
-                        <option value="summer">Summer</option>
-                        <option value="spring">Spring</option>
-                        <option value="fall">Fall</option>
-                        <option value="winter">Winter</option>
-                    </select>
-                </label>
-                <label>
-                    <b>Type: </b>
-                    <select name="" id="filter-type">
-                        <option value="any">Any</option>
-                        <option value="fruit">Fruit</option>
-                        <option value="vegetable">Vegetable</option>
-                        <option value="other">Other</option>
-                    </select>
-                </label>
-                <label>
-                    <b>Color: </b>
-                    <select name="" id="filter-color">
-                        <option value="any">Any</option>
-                        <option value="red">Red</option>
-                        <option value="yellow">Yellow</option>
-                        <option value="orange">Orange</option>
-                        <option value="green">Green</option>
-                        <option value="brown">Brown</option>
-                        <option value="blue">Blue</option>
-                        <option value="peach">Peach</option>
-                        <option value="purple">Purple</option>
-                    </select>
-                </label>
-                <button class="button success" onclick="onSearch()">Show Search</button>
-                <button class="button orange" onclick="onClear()">Show All</button>
-                <button class="button success" onclick="onShowCart()">Show Cart</button>
-                <button class="button danger" onclick="onClearCart()">Clear Cart</button>
-                <button class="button success" onclick="onSaveCart()">Save Cart</button>
-            </div>
-        </nav>
     </div>
     <div class="content-other-pages">
         <section id="productsDisplayBox">
