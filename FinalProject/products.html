@@ -10,16 +10,24 @@
     <script type="module" src="./js/products.js" defer></script>
 </head>
 <body>
-    <div class="banner">
-        <nav>
-            <h3>Québec Farmer's Shop</h3>
-            <ul>
-                <a href="index.html">Home >> </a>
-                <a href="#">Our Products >> </a>
-                <a href="purchase.html">Purchase >> </a>
-                <a href="bibliography.html">Bibliography</a>
-            </ul>
-            <div class="filter">
+    <nav>
+        <h3>Québec Farmer's Shop</h3>
+        <label class="filter-toggle-btn">
+            <span>⚙</span>
+            <input type="checkbox" checked>
+        </label>
+        <label class="links-toggle-btn">
+            <span>☰</span>
+            <input type="checkbox">
+        </label>
+        <ul class="links">
+            <a href="index.html">Home >> </a>
+            <a href="#">Our Products >> </a>
+            <a href="purchase.html">Purchase >> </a>
+            <a href="bibliography.html">Bibliography</a>
+        </ul>
+        <div class="filter">
+            <div>
                 <label>
                     <b>Name(like): </b>
                     <input type="text" id="filter-name">
@@ -57,13 +65,17 @@
                         <option value="purple">Purple</option>
                     </select>
                 </label>
+            </div>
+            <div>
                 <button class="button success" onclick="onSearch()">Show Search</button>
                 <button class="button orange" onclick="onClear()">Show All</button>
                 <button class="button success" onclick="onShowCart()">Show Cart</button>
                 <button class="button danger" onclick="onClearCart()">Clear Cart</button>
                 <button class="button success" onclick="onSaveCart()">Save Cart</button>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="banner">
     </div>
     <div class="content-other-pages">
         <section id="productsDisplayBox">
