@@ -32,7 +32,6 @@
 
 .banner {
     color: white;
-    height: 700px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -62,7 +61,6 @@ nav {
     z-index: 10;
     padding: 0.5rem;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -71,9 +69,14 @@ nav>h3 {
     padding: 0 5px;
 }
 
-nav>ul {
-    display: flex;
+nav>ul.links {
+    display: none;
     flex-direction: column;
+    width: 100%;
+}
+
+label.links-toggle-btn:has(input:checked) + ul.links {
+  display: flex;
 }
 
 nav a {
@@ -106,6 +109,14 @@ nav a:last-child {
 
 nav a:hover {
     background-color: rgb(43, 179, 43);
+}
+
+.links-toggle-btn {
+  margin-left: 0.5rem;
+}
+
+.links-toggle-btn input {
+  display: none;
 }
 
 .banner>section {
@@ -201,8 +212,7 @@ footer>p {
 .content-other-pages {
     min-height: 700px;
     padding: 10px;
-    margin: 0 50px;
-    margin-top: -600px;
+    margin: 0.5rem;
     position: relative;
 }
 
@@ -220,8 +230,14 @@ footer>p {
 }
 
 @media (min-width: 768px) {
-    nav, nav>ul {
+    nav > .links-toggle-btn {
+        display: none;
+    }
+
+    nav, nav>ul.links {
+        display: flex;
         flex-direction: row;
+        width: unset;
     }
 
     .content li {
@@ -243,5 +259,9 @@ footer>p {
 
     .content li:nth-child(even) {
         margin-left: auto;
+    }
+
+    .content-other-pages {
+        margin: 1rem;
     }
 }

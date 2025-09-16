@@ -13,9 +13,21 @@ p {
     background-color: green;
     padding: 1rem;
     box-sizing: border-box;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     width: 100%;
+}
+
+label.filter-toggle-btn:has(input:checked) ~ div.filter {
+  display: flex;
+}
+
+.filter-toggle-btn {
+    margin-left: auto;
+}
+
+.filter-toggle-btn input {
+  display: none;
 }
 
 .filter > div {
@@ -157,6 +169,10 @@ button.orange {
         padding: 15px;
         box-sizing: border-box;
         display: unset;
+    }
+
+    nav > .filter-toggle-btn {
+        display: none;
     }
 
     .product {
