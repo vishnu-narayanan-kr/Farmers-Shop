@@ -12,7 +12,7 @@ table {
 
 th, td {
     border: 1px solid rgb(35, 184, 35);
-    padding: 8px;
+    padding: 0.2rem;
 }
 
 th {
@@ -70,7 +70,11 @@ dialog h2 {
 dialog > .container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1rem;
+}
+
+dialog > .container input {
+    width: 100%;
 }
 
 #login-dialog td, #signup-dialog td {
@@ -82,4 +86,29 @@ dialog > .container {
     height: 20px;
     padding: 5px;
     margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  table th:nth-child(3),
+  table td:nth-child(3),
+  table th:nth-child(4),
+  table td:nth-child(4),
+  table th:nth-child(5),
+  table td:nth-child(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  table th:nth-child(7),
+  table td:nth-child(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  table th:nth-child(6),
+  table td:nth-child(6) {
+    display: none;
+  }
 }

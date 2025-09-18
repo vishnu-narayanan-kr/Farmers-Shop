@@ -17,6 +17,18 @@
     background: #555;
 }
 
+input,
+select,
+textarea {
+  background-color: #fff !important;  /* force white background */
+  color: #000;                        /* make text readable */
+  box-shadow: none;          /* remove inner shadow */
+  outline: none;             /* removes default outline (optional) */
+  -webkit-appearance: none;           /* remove browser default styling */
+  -moz-appearance: none;
+  appearance: none;
+}
+
 * {
     margin: 0;
     padding: 0;
