@@ -1,1 +1,32 @@
-[hosted site](https://vishnu-narayanan-kr.github.io/Farmers-Shop/)
+# E-Commerce Demo Website
+
+A responsive e-commerce website built with **HTML, CSS, and vanilla JavaScript**, deployed on **GitHub Pages**.  
+The project demonstrates how to structure a modern front-end application, mock API interactions, and design with a **mobile-first approach**.
+
+🔗 **Live Demo**: [View on GitHub Pages](https://vishnu-narayanan-kr.github.io/Farmers-Shop/)
+---
+
+## ✨ Features
+- 📱 **Mobile-First Design**: The UI is optimized for smaller screens first, then progressively enhanced for larger devices.  
+- 🛍️ **E-Commerce Flow**: Product listing, details, and cart simulation.  
+- 📡 **Mock API Data**: Products are fetched from a mocked API layer, simulating real API interactions.  
+- 🎨 **Pure Frontend Stack**: Built only with **HTML, CSS, and JavaScript** (no frameworks).  
+- 🌐 **Deployed via GitHub Pages** for easy access and sharing.  
+
+---
+
+## 🚀 Why This Project
+This project was intentionally built **without a framework** to showcase:
+- Core knowledge of HTML, CSS, and JavaScript.  
+- Ability to manage state and UI updates without relying on external libraries.  
+- Understanding of responsive design.  
+
+👉 In a real-world production environment, an application of this type would typically be developed with a **modern framework such as React, Vue, or Angular** for scalability, maintainability, and developer productivity.
+
+---
+
+## 🛠️ Tech Stack
+- **HTML5** — semantic markup  
+- **CSS3** — flexbox, and custom styling  
+- **JavaScript (ES6+)** — data fetching, DOM manipulation, state handling  
+- **GitHub Pages** — deployment  
